@@ -44,7 +44,7 @@ class _MapScreenState extends State<MapScreen> {
               widget.initialLocation.latitude,
 
             ),
-            zoom: 16,
+            zoom: 6,
 
 
           ),
