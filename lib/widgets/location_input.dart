@@ -50,7 +50,8 @@ Future <void> _selectOnMap() async{
     _showPreview(selectedLocation.latitude, selectedLocation.longitude);
     widget.onSelectPlace(selectedLocation.latitude,selectedLocation.longitude);
 
-   // print(selectedLocation.latitude);
+    //print(selectedLocation.longitude);
+  
 }
 
   

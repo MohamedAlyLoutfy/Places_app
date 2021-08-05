@@ -4,6 +4,7 @@ import '../widgets/image_input.dart';
 import 'dart:io';
 import '../widgets/location_input.dart';
 import 'package:provider/provider.dart';
+import 'dart:convert';
 import '../providers/great_places.dart';
  class AddPlaceScreen  extends StatefulWidget {
   
@@ -20,7 +21,7 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
     _pickedImage=pickedImage;
 
   }
-  void _selectPlace(double lat,double,lng){
+  void _selectPlace(double lat,double lng){
     _pickedLocation=PlaceLocation(latitude: lat,longitude:lng );
 
   }
@@ -34,6 +35,7 @@ class _AddPlaceScreenState extends State<AddPlaceScreen> {
       
       return;
     }
+   
     Provider.of<GreatPlaces>(context,listen: false)
     .addPlace(_titleController.text, _pickedImage,_pickedLocation);
     Navigator.of(context).pop();

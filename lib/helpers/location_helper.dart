@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-// GOOGLE_API_KEY = 'AIzaSyBg9yn5JtQgKRFbg6FCTy4ewbF24kRuAYI';
+//const GOOGLE_API_KEY = 'AIzaSyBg9yn5JtQgKRFbg6FCTy4ewbF24kRuAYI';
 const GOOGLE_API_KEY='AIzaSyDfonhiKtNA3UvOgWdtOzv4Y56yMUluWh0';
 
 class LocationHelper {
